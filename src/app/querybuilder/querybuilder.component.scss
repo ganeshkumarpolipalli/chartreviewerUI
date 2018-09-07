@@ -1,0 +1,62 @@
+.queryBuilder{
+
+    text-align:center;
+
+    width:100%;
+
+    .innerbody{
+
+        width:1000px;
+        height:100%;
+        min-height:660px;
+        margin:0 auto;
+        border-radius: 2px; 
+        box-shadow: 0 2px 2px rgba(0,0,0,.24),0 0 2px rgba(0,0,0,.12)
+    }
+
+ 
+    .rangecls1 span{
+        font-weight:bold;
+    }
+
+    h3.queryTitle{
+
+        color:rgba(0,0,0,.54);
+        margin:0px;
+        padding-top:15px;
+        padding-bottom:20px;
+        background-color:#f2f2f2;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .rangeCls{
+        font-family: 'Montserrat', sans-serif;
+
+        h5{
+            text-align: left;
+            margin-left:15px;
+            padding-top:15px;
+            font-size:14px;
+        }
+
+        .rangedates{
+            display: flex;
+            padding-top:10px;
+            
+            div{
+                padding: 0 20px 0 20px;
+                font-size:12px;
+            }
+
+            .rangecls1{
+                float: left;
+            }
+
+
+        
+        }
+    }
+
+    
+}

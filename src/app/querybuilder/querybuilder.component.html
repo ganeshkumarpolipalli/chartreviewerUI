@@ -1,0 +1,66 @@
+<div class="queryBuilder">  
+  <div class="innerbody">
+
+    <h3 class="queryTitle"> Welcome to Chart Reviewer Query Builder </h3>
+
+    <div class="rangeCls">
+
+      <h5>
+        Date of service selection
+      </h5>
+      <div class="rangedates">
+
+        <div class="rangecls1">
+          <span> Enter the Date Range: </span>
+         
+
+          <input type="text"
+          
+          [minDate]="minDate"
+          [maxDate]="maxDate"
+          #dp="bsDatepicker"
+          bsDatepicker [(bsValue)]="myDateValue1" [bsConfig]="bsConfig" />
+ 
+        </div>
+        <div class="rangecls1"><span>THRU </span>
+
+
+            <input type="text"
+          
+            [minDate]="minDate"
+            [maxDate]="maxDate"
+            #dp="bsDatepicker"
+            bsDatepicker [(bsValue)]="myDateValue2" [bsConfig]="bsConfig" />
+        </div>
+
+        <div> OR</div>
+        <div class="rangecls1"><span>Select Period: </span>
+
+        <select >
+            <option value="" selected disabled hidden>Select Month </option>
+          <option>  2nd Quarter</option>
+          <option>  3rd Quarter</option>
+          <option>  4th Quarter</option>
+          <option> January </option>
+          <option> February </option>
+        </select>
+        <select >
+            <option value="" selected disabled hidden>Select Year</option>
+            <option>  2018</option>
+            <option> 2017 </option>
+            <option>  2016 </option>
+            <option> 2015 </option>
+            <option> 2014 </option>
+          </select>
+
+        </div>
+
+      </div>
+
+      
+    </div>
+
+  <app-chart-data-table></app-chart-data-table>
+  </div>
+
+</div>
